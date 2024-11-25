@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="ru" class="html">
+  @include('html/head.html', {"title": "Conferos | О конференции", "description": "Конференция"})
+
+  <body class="body">
+    @include('html/header.html', {"header-url": "header-conference.html"})
+
+    <main class="main conference">
+      <h1 class="visually-hidden">Conferos-портал мероприятий</h1>
+      <div class="main__btns">
+        <a class="main__btn main__btn--top btn-reset" href="#" aria-label="to top">
+          <svg
+            width="71"
+            height="71"
+            viewBox="0 0 71 71"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_b_84_426)">
+              <rect width="71" height="71" rx="3" fill="#779EB4" fill-opacity="0.66" />
+            </g>
+            <path
+              d="M35 54.5C35 55.0523 35.4477 55.5 36 55.5C36.5523 55.5 37 55.0523 37 54.5H35ZM36.7071 16.2929C36.3166 15.9024 35.6834 15.9024 35.2929 16.2929L28.9289 22.6569C28.5384 23.0474 28.5384 23.6805 28.9289 24.0711C29.3195 24.4616 29.9526 24.4616 30.3431 24.0711L36 18.4142L41.6569 24.0711C42.0474 24.4616 42.6805 24.4616 43.0711 24.0711C43.4616 23.6805 43.4616 23.0474 43.0711 22.6569L36.7071 16.2929ZM37 54.5V17H35V54.5H37Z"
+              fill="white" />
+            <defs>
+              <filter
+                id="filter0_b_84_426"
+                x="-4"
+                y="-4"
+                width="79"
+                height="79"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                <feComposite
+                  in2="SourceAlpha"
+                  operator="in"
+                  result="effect1_backgroundBlur_84_426" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_backgroundBlur_84_426"
+                  result="shape" />
+              </filter>
+            </defs>
+          </svg>
+        </a>
+        <a class="main__btn main__btn--return btn-reset" href="index.html" aria-label="return">
+          <svg
+            width="71"
+            height="71"
+            viewBox="0 0 71 71"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_b_84_429)">
+              <rect width="71" height="71" rx="3" fill="#779EB4" fill-opacity="0.66" />
+            </g>
+            <path
+              d="M54.5 36C55.0523 36 55.5 35.5523 55.5 35C55.5 34.4477 55.0523 34 54.5 34L54.5 36ZM16.2929 34.2929C15.9024 34.6834 15.9024 35.3166 16.2929 35.7071L22.6569 42.0711C23.0474 42.4616 23.6805 42.4616 24.0711 42.0711C24.4616 41.6805 24.4616 41.0474 24.0711 40.6569L18.4142 35L24.0711 29.3431C24.4616 28.9526 24.4616 28.3195 24.0711 27.9289C23.6805 27.5384 23.0474 27.5384 22.6569 27.9289L16.2929 34.2929ZM54.5 34L17 34L17 36L54.5 36L54.5 34Z"
+              fill="white" />
+            <defs>
+              <filter
+                id="filter0_b_84_429"
+                x="-4"
+                y="-4"
+                width="79"
+                height="79"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                <feComposite
+                  in2="SourceAlpha"
+                  operator="in"
+                  result="effect1_backgroundBlur_84_429" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_backgroundBlur_84_429"
+                  result="shape" />
+              </filter>
+            </defs>
+          </svg>
+        </a>
+      </div>
+
+      <div class="conference__container container">
+        <div class="conference__content">
+          <section class="about">
+            <h2 class="about__title subtitle">О конференции</h2>
+            <p class="about__text">
+              Уход западных вендоров с российского рынка стал непростым испытанием для большинства
+              компаний. Оправившись от первого шока, многие нашли выход из ситуации, а некоторые
+              признаются, что случившееся послужило драйвером для позитивных изменений и даже
+              серьезного роста. Однако далеко не все проблемы удалось решить.
+            </p>
+            <p class="about__text">
+              Участники конференции TAdviser «ИМПОРТОЗАМЕЩЕНИЕ 2024: РЕАЛЬНЫЙ ОПЫТ», которая
+              состоится 10 сентября 2024, обсудят актуальные проблемы и успехи импортозамещения,
+              обменяются опытом и результатами успешных миграционных стратегий, рассмотрят наиболее
+              интересные разработки и перспективы дальнейшего развития.
+            </p>
+            <figure>
+              <figcaption class="about__list-title">
+                На конференции планируется затронуть следующие ключевые темы:
+              </figcaption>
+              <ul class="about__list list-reset">
+                <li class="about__list-item">
+                  Проблемы и вызовы, с которыми сталкивается российская ИТ-отрасль при реализации
+                  импортозамещения
+                </li>
+                <li class="about__list-item">
+                  Роль искусственного интеллекта, Интернета вещей и других передовых технологий в
+                  формировании нового технологического уклада в России
+                </li>
+                <li class="about__list-item">
+                  Изменение государственных и корпоративных стратегий в свете импортозамещения
+                </li>
+                <li class="about__list-item">
+                  Примеры успешного импортозамещения в госсекторе и бизнесе
+                </li>
+                <li class="about__list-item">
+                  Меры государственной поддержки и стимулирования развития отечественногоИТ-сектора
+                </li>
+                <li class="about__list-item">
+                  Обмен опытом и лучшими практиками в области импортозамещения между представителями
+                  различных отраслей и регионов
+                </li>
+                <li class="about__list-item">
+                  Новые подходы и стратегии в привлечении и подготовке ИТ-специалистовв условиях
+                  дефицита кадров
+                </li>
+                <li class="about__list-item">
+                  Формирование экосистемы для развития отечественных ИТ-решений и обеспечения
+                  технологической независимости страны
+                </li>
+              </ul>
+            </figure>
+          </section>
+
+          <section class="terms" id="terms">
+            <h2 class="terms__title subtitle">Условия участия</h2>
+            <ul class="terms__choice list-reset">
+              <li class="terms__choice-item">
+                <strong class="terms__choice-value">Бесплатно</strong>
+                <span class="terms__choice-description">
+                  Для представителей заказчиков (при подтверждении организаторов)
+                </span>
+              </li>
+              <li class="terms__choice-item">
+                <strong class="terms__choice-value">Платно</strong>
+                <span class="terms__choice-price">23 000 ₽</span>
+                <span class="terms__choice-description">
+                  для представителей системных интеграторов и вендоров (за одного представителя)
+                </span>
+              </li>
+            </ul>
+            <p class="terms__info">
+              Дополнительную информацию можно получить по e-mail:
+              <a href="mailto:conf@conferos.ru">conf@conferos.ru</a>
+            </p>
+
+            <div class="terms__form-wrapper tabs" id="registration">
+              <div class="terms__tabs" id="report">
+                <button
+                  class="terms__tabs-btn terms__tabs-btn--active btn-reset"
+                  data-path="registration">
+                  Зарегистрироваться
+                </button>
+                <button class="terms__tabs-btn btn-reset" data-path="report">
+                  Заявка на доклад
+                </button>
+              </div>
+              <div class="tabs__content">
+                <form
+                  class="terms__form form tabs__panel tabs__panel--active"
+                  data-target="registration">
+                  <h3 class="form__title">Регистрация</h3>
+                  <label class="form__label">
+                    <span>Фамилия*</span>
+                    <input class="form__field" type="text" name="surname" required />
+                  </label>
+                  <label class="form__label">
+                    <span>Имя*</span>
+                    <input class="form__field" type="text" name="firstname" required />
+                  </label>
+                  <label class="form__label">
+                    <span>Отчество*</span>
+                    <input class="form__field" type="text" name="middlename" required />
+                  </label>
+                  <label class="form__label">
+                    <span>Должность*</span>
+                    <input class="form__field" type="text" name="position" required />
+                  </label>
+                  <label class="form__label">
+                    <span>Сайт компании*</span>
+                    <input class="form__field" type="text" name="site" required />
+                  </label>
+                  <label class="form__label">
+                    <span>Профиль деятельности компании*</span>
+                    <select class="form__field" name="company-profile" required>
+                      <option value="" hidden>&nbsp;</option>
+                      <option value="1">Profile 1</option>
+                      <option value="2">Profile 2</option>
+                    </select>
+                  </label>
+                  <label class="form__label">
+                    <span>Телефон*</span>
+                    <input class="form__field" type="text" name="phone" required />
+                  </label>
+                  <label class="form__label form__label--email">
+                    <span>E-mail*</span>
+                    <input class="form__field" type="text" name="email" required />
+                    <span>Необходимо указывать корпоративный электронный адрес</span>
+                  </label>
+                  <label class="form__label">
+                    <span>Город / Регион*</span>
+                    <input class="form__field" type="text" name="city" required />
+                  </label>
+                  <label class="form__label form__label--textarea">
+                    <span>Комментарий*</span>
+                    <textarea class="form__field" name="comment" required></textarea>
+                  </label>
+                  <label class="form__label form__label--textarea">
+                    <span>
+                      Добавьте в это поле свою биографию и она автоматически сохранится в
+                      профессиональной базе знаний TAdviser
+                    </span>
+                    <textarea class="form__field" name="biography"></textarea>
+                  </label>
+                  <label class="form__label checkbox">
+                    <input type="checkbox" class="checkbox__real" name="terms" required />
+                    <span class="checkbox__custom"></span>
+                    <span class="checkbox__content">
+                      Я СОГЛАСЕН на обработку и хранение моих персональных данных, указанных мною в
+                      данной анкете (включая мою контактную информацию), а также на получение
+                      информационных рассылок от TAdviser, передачу контактных данных партнерам
+                      мероприятия, публикацию и продажу на сайте tadviser.ru фотографий с моим
+                      участием, сделанных во время конференции
+                    </span>
+                  </label>
+                  <label class="form__label form__label--captcha">
+                    <img src="@images/captha.png" alt="captha" />
+                    <span>Введите код с картинки</span>
+                    <input class="form__field" type="text" required />
+                  </label>
+                  <button class="form__btn btn btn--red btn-reset" type="submit">
+                    зарегистрироваться
+                  </button>
+                </form>
+                <form class="terms__form form tabs__panel" data-target="report">
+                  <h3 class="form__title">Заявка на доклад</h3>
+                  <label class="form__label">
+                    <span>Фамилия*</span>
+                    <input class="form__field" type="text" name="surname" required />
+                  </label>
+                  <label class="form__label">
+                    <span>Имя*</span>
+                    <input class="form__field" type="text" name="firstname" required />
+                  </label>
+                  <label class="form__label">
+                    <span>Отчество*</span>
+                    <input class="form__field" type="text" name="middlename" required />
+                  </label>
+                  <label class="form__label">
+                    <span>Должность*</span>
+                    <input class="form__field" type="text" name="position" required />
+                  </label>
+                  <label class="form__label">
+                    <span>Компания*</span>
+                    <input class="form__field" type="text" name="company" required />
+                  </label>
+                  <label class="form__label">
+                    <span>Сайт компании</span>
+                    <input class="form__field" type="text" name="site" />
+                  </label>
+                  <label class="form__label">
+                    <span>Название доклада*</span>
+                    <input class="form__field" type="text" name="name_report" required />
+                  </label>
+                  <label class="form__label form__label--textarea">
+                    <span>Тезисы доклада*</span>
+                    <textarea class="form__field" name="thesis__report" required></textarea>
+                  </label>
+                  <label class="form__label">
+                    <span>Телефон*</span>
+                    <input class="form__field" type="text" name="phone" required />
+                  </label>
+                  <label class="form__label form__label--email">
+                    <span>E-mail*</span>
+                    <input class="form__field" type="text" name="email" required />
+                    <span>Необходимо указывать корпоративный электронный адрес</span>
+                  </label>
+                  <label class="form__label">
+                    <span>Город / Регион*</span>
+                    <input class="form__field" type="text" name="city" required />
+                  </label>
+                  <label class="form__label checkbox">
+                    <input type="checkbox" class="checkbox__real" name="terms" required />
+                    <span class="checkbox__custom"></span>
+                    <span class="checkbox__content">
+                      Я СОГЛАСЕН на обработку и хранение моих персональных данных, указанных мною в
+                      данной анкете (включая мою контактную информацию), а также на получение
+                      информационных рассылок от TAdviser, передачу контактных данных партнерам
+                      мероприятия, публикацию и продажу на сайте tadviser.ru фотографий с моим
+                      участием, сделанных во время конференции
+                    </span>
+                  </label>
+                  <label class="form__label form__label--captcha">
+                    <img src="@images/captha.png" alt="captha" />
+                    <span>Введите код с картинки</span>
+                    <input class="form__field" type="text" required />
+                  </label>
+                  <button class="form__btn btn btn--red btn-reset" type="submit">
+                    зарегистрироваться
+                  </button>
+                </form>
+              </div>
+            </div>
+          </section>
+
+          @include("html/participants.html")
+        </div>
+
+        <!-- prettier-ignore -->
+        @include("html/aside.html")
+
+        @include("html/partners.html", {"title": "О партнерах конференции"})
+        
+        @include("html/archive.html", {"title": "Архив конференций Banks IT Day", "id": "archive"})
+      </div>
+    </main>
+
+    @include('html/footer.html', {})
+  </body>
+</html>

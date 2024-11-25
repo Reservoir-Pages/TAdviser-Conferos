@@ -1,0 +1,72 @@
+.report {
+  .interview {
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &__img {
+      margin-bottom: 31px;
+      padding: 8px 23px 3px;
+      max-width: max-content;
+      background-color: $color_grey;
+    }
+
+    &__question {
+      margin: 0;
+      margin-bottom: 29px;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 140%;
+    }
+
+    &__author {
+      margin-bottom: 30px;
+      padding: 9px 19px;
+      max-width: max-content;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 140%;
+      background-color: $color_grey;
+    }
+
+    &__answer {
+      margin: 0;
+      padding-right: 10px;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 140%;
+
+      &:not(:last-child) {
+        margin-bottom: 22px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .report {
+    .interview {
+      padding-top: 33px;
+
+      &__title {
+        margin-bottom: 22px;
+      }
+
+      &__img {
+        margin-bottom: 26px;
+      }
+
+      &__question {
+        margin-bottom: 25px;
+      }
+
+      &__author {
+        margin-bottom: 25px;
+      }
+
+      &__answer {
+        padding-right: 0px;
+      }
+    }
+  }
+}

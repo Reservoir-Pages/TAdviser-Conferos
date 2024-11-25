@@ -1,0 +1,128 @@
+.report {
+  .program {
+    margin-bottom: 55px;
+
+    &__title {
+      margin-bottom: 31px;
+    }
+
+    .table {
+      width: 100%;
+      font-size: 13px;
+      line-height: 130%;
+      table-layout: fixed;
+      border-spacing: 6px;
+
+      &__string {
+        height: 83px;
+
+        .table__col {
+          background-color: $color_grey;
+
+          a {
+            text-decoration: underline;
+          }
+        }
+
+        &:nth-child(even) {
+          .table__col {
+            background-color: $color_grey-blue-dark;
+          }
+        }
+      }
+
+      &__time {
+        width: 13%;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      &__description {
+        position: relative;
+        padding-right: 50px;
+        padding-left: 10px;
+        width: 54%;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        &--file {
+          &::after {
+            content: url("@images/icon_pdf.svg");
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+          }
+        }
+      }
+
+      &__person {
+        padding-left: 12px;
+        b {
+          font-weight: 600;
+        }
+
+        div {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .report {
+    .program {
+      margin-bottom: 44px;
+      padding-top: 40px;
+
+      &__title {
+        margin-bottom: 30px;
+      }
+
+      .table {
+        line-height: 135%;
+        border-spacing: 0px;
+
+        &__string {
+          display: flex;
+          flex-direction: column;
+          height: auto;
+
+          &:not(:last-child) {
+            border-bottom: 5px solid $color_bg;
+          }
+        }
+
+        &__col {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          min-height: 87px;
+          width: 100%;
+
+          &:not(:last-child) {
+            border-bottom: 5px solid $color_bg;
+          }
+        }
+
+        &__time {
+          width: 40%;
+        }
+
+        &__description {
+          padding-top: 34px;
+          padding-right: 60px;
+          padding-bottom: 34px;
+          padding-left: 14px;
+
+          &--file {
+            &::after {
+              right: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,199 @@
+.conference {
+  .partners {
+    max-width: 100%;
+    margin-bottom: 60px;
+
+    &__title {
+      margin-bottom: 33px;
+    }
+
+    &__swiper {
+      .swiper {
+        &-pagination {
+          top: 40px;
+          bottom: auto;
+          left: -95px;
+          text-align: right;
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 130%;
+          color: $color_grey-blue;
+          letter-spacing: -3px;
+        }
+      }
+
+      &-button {
+        height: 58px;
+        width: 58px;
+        border-radius: 3px;
+        background-color: $color_grey-blue;
+
+        &:hover {
+          opacity: 0.5;
+        }
+
+        &::after {
+          content: "";
+          height: 40%;
+          width: 40%;
+          border-top: 2px solid $color_white;
+          border-right: 2px solid $color_white;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          height: 2px;
+          width: 50%;
+          background-color: $color_white;
+        }
+
+        &--prev {
+          top: calc(50% - 7px);
+          left: 0;
+
+          &::after {
+            margin-left: 10px;
+            transform: rotate(-135deg);
+          }
+
+          &::before {
+            left: 65%;
+          }
+        }
+
+        &--next {
+          top: calc(50% - 50px);
+          right: 0;
+
+          &::after {
+            margin-right: 10px;
+            transform: rotate(45deg);
+          }
+
+          &::before {
+            right: 65%;
+          }
+        }
+      }
+    }
+
+    .partners-card {
+      position: relative;
+      padding: 37px 91px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 130%;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 50px;
+        bottom: 0;
+        left: 50px;
+        z-index: -1;
+        background-color: $color_grey;
+      }
+
+      &__logo {
+        margin-bottom: 27px;
+      }
+
+      &__description {
+        margin: 0;
+        margin-bottom: 24px;
+      }
+
+      figure {
+        margin: 0;
+      }
+
+      &__list {
+        padding-left: 25px;
+
+        &-title {
+          margin-bottom: 30px;
+          font-size: 24px;
+          line-height: 130%;
+        }
+      }
+
+      &__item {
+        &:not(:last-child) {
+          margin-bottom: 17px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .conference {
+    .partners {
+      margin-bottom: 0;
+
+      &__title {
+        margin-bottom: 19px;
+        padding-left: 15px;
+
+        &::before {
+          left: -19px;
+          width: 15px;
+        }
+      }
+
+      &__swiper {
+        margin-left: -18px;
+        margin-right: -18px;
+        padding-top: 78px;
+        background-color: $color_grey;
+
+        .swiper-pagination {
+          max-width: max-content;
+          top: 22px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        &-button {
+          top: 109px;
+          height: 27px;
+          width: 27px;
+
+          &::after {
+            height: 50%;
+            width: 50%;
+          }
+
+          &--prev {
+            left: 10px;
+          }
+
+          &--next {
+            right: 10px;
+          }
+        }
+      }
+
+      .partners-card {
+        padding: 0 18px 26px 18px;
+
+        &::before {
+          left: 0;
+          right: 0;
+        }
+
+        &__logo {
+          margin: 0 auto;
+          margin-bottom: 20px;
+          width: 75%;
+        }
+
+        &__description {
+          margin-bottom: 7px;
+        }
+      }
+    }
+  }
+}

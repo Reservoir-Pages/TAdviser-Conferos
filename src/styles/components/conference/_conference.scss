@@ -1,0 +1,38 @@
+.conference {
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__content {
+    width: 67.5%;
+  }
+
+  .aside {
+    width: calc(32% - 28px);
+  }
+}
+
+@media (max-width: 768px) {
+  .conference {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__content {
+      width: 100%;
+    }
+
+    .aside {
+      padding-top: 60px;
+      width: 100%;
+    }
+
+    .archive {
+      display: none;
+    }
+  }
+}

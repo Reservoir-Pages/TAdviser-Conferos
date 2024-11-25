@@ -1,0 +1,349 @@
+// OLD
+.index {
+  .partners {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -2;
+      // height: 64%;
+      height: 90%;
+      background-color: $color_grey-blue-dark;
+    }
+
+    &::after {
+      content: url("@images/decor-partners-bg.png");
+      position: absolute;
+      top: 29%;
+      right: 15px;
+      z-index: -2;
+    }
+
+    &__container {
+      padding-top: 59px;
+    }
+
+    &__title {
+      margin-bottom: 31px;
+    }
+
+    &__slider {
+      position: relative;
+      margin: 0 auto;
+      padding: 18px 18px;
+      width: 88%;
+      background-image: linear-gradient($color_white 0% 55%, transparent 55% 100%);
+
+      &::before {
+        content: url("@images/decor-dots-22.svg");
+        position: absolute;
+        bottom: 25px;
+        left: -344px;
+      }
+
+      .partners-card {
+        padding: 12px 16px 20px 14px;
+        background-color: $color_grey;
+
+        &__date {
+          display: inline-block;
+          margin-bottom: 15px;
+          font-size: 12px;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+
+        &__title {
+          margin: 0;
+          margin-bottom: 13px;
+          font-size: 18px;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+
+        &__description {
+          margin: 0;
+          margin-bottom: 13px;
+          font-size: 12px;
+          font-weight: 500;
+        }
+
+        &__btn {
+          width: 100%;
+          border-color: $color_grey-blue-light;
+          text-transform: none;
+
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+
+      &-button {
+        position: absolute;
+        top: 31%;
+
+        &:hover {
+          opacity: 0.5;
+        }
+
+        &--prev {
+          left: -57px;
+        }
+
+        &--next {
+          right: -57px;
+        }
+      }
+    }
+
+    &__description {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 34px;
+      padding-top: 44px;
+      padding-right: 3px;
+      padding-left: 1px;
+
+      &-title {
+        // position: relative;
+        margin: 0;
+        margin-bottom: 30px;
+        width: 100%;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        // &::before {
+        //   content: url("@images/decor-dots-22.svg");
+        //   position: absolute;
+        //   top: 22px;
+        //   right: -201px;
+        // }
+      }
+
+      &-content {
+        position: relative;
+        margin-right: 9px;
+        padding-left: 2px;
+        max-width: 65%;
+        font-size: 16px;
+        line-height: 130%;
+        font-weight: 500;
+
+        &::before {
+          content: url("@images/decor-partners-double.svg");
+          position: absolute;
+          top: 35px;
+          right: -200px;
+        }
+      }
+
+      &-text {
+        margin: 0;
+
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+
+      &-btn {
+        position: relative;
+        width: 100%;
+        max-width: 30%;
+        margin-bottom: 2px;
+
+        // &::before {
+        //   content: url("@images/decor-partners-double.svg");
+        //   position: absolute;
+        //   top: -82px;
+        //   left: 6%;
+        //   z-index: -1;
+        // }
+      }
+    }
+
+    &__profits {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 43px;
+
+      &-item {
+        position: relative;
+        padding-right: 73px;
+        background-repeat: no-repeat;
+        background-position: 0% 27%;
+
+        span {
+          display: inline-block;
+          margin-bottom: 14px;
+          font-size: 12px;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+
+        &:last-child {
+          span {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      &-img {
+        position: relative;
+        max-width: max-content;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 3px;
+          right: -25px;
+          height: 100px;
+          width: 100px;
+          background-image: linear-gradient(
+            135deg,
+            transparent 0% 50%,
+            $color_black 50% 52%,
+            $color_grey-blue-dark 52% 100%
+          );
+        }
+
+        &--98 {
+          &::before {
+            top: 17px;
+            right: -28px;
+          }
+
+          .partners__profits-description {
+            bottom: 25px;
+          }
+        }
+      }
+
+      &-description {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: min-content;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        transform: translateX(90%);
+      }
+    }
+  }
+
+  @media (max-width: 930px) {
+    .partners {
+      &__slider {
+        &::before {
+          content: none;
+        }
+      }
+
+      &__description {
+        &-title {
+          margin-bottom: 24px;
+
+          &::before {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .partners {
+      &::before {
+        height: 82%;
+      }
+
+      &::after {
+        content: none;
+      }
+
+      &__container {
+        padding-left: 17px;
+        padding-right: 17px;
+      }
+
+      &__title {
+        margin-bottom: 20px;
+      }
+
+      &__slider {
+        padding: 16px 53px;
+        width: 97%;
+        background-image: linear-gradient(#ffffff 0% 83%, transparent 83% 100%);
+
+        &-button {
+          top: 25%;
+
+          &--prev {
+            left: -13px;
+          }
+
+          &--next {
+            right: -12px;
+          }
+        }
+      }
+
+      &__description {
+        padding-right: 0;
+
+        &-content {
+          margin-right: 0;
+          margin-bottom: 27px;
+          padding-left: 0;
+          max-width: none;
+        }
+
+        &-text {
+          &:not(:last-child) {
+            margin-bottom: 22px;
+          }
+        }
+
+        &-btn {
+          max-width: none;
+
+          &::before {
+            content: none;
+          }
+        }
+      }
+
+      &__profits {
+        flex-direction: column;
+        padding-bottom: 29px;
+        padding-left: 10px;
+
+        &-item {
+          &:not(:last-child) {
+            margin-bottom: 47px;
+          }
+        }
+
+        &-img {
+          &::before {
+            right: -15px;
+          }
+        }
+
+        &-description {
+          bottom: 5px;
+          right: 10px;
+        }
+      }
+    }
+  }
+}

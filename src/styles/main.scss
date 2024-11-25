@@ -1,0 +1,61 @@
+@import "lib";
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "settings";
+@import "effects";
+
+@import "./components/**/*";
+
+.main {
+  // height: 100%;
+
+  &__btns {
+    position: fixed;
+    bottom: 100px;
+    right: 8%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__btn {
+    height: 71px;
+    width: 71px;
+
+    &--top {
+      margin-bottom: 4px;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  .main {
+    &__btns {
+      bottom: 50px;
+      right: 20px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .main {
+    &__btns {
+      bottom: 227px;
+      right: 50%;
+      transform: translateX(50%);
+      flex-direction: row;
+    }
+
+    &__btn {
+      &:first-child {
+        margin-right: 7px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

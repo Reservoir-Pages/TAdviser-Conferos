@@ -1,0 +1,11 @@
+.git
+.idea
+node_modules
+build
+dist
+ftp-data.json
+mail-data.php
+*.zip
+tasks.md
+.env
+issues.md
